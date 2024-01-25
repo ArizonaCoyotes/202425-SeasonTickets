@@ -34,7 +34,7 @@ body {
   cursor: pointer;
   width: 100%;
   text-align: left;
-  border: 1px solid #ffffff;
+  border: 1px solid #000000;
   outline: none;
   transition: 0.4s !important;
 }
@@ -237,7 +237,7 @@ body {
     margin: 0px;
     color: #fff;
     font-size: 14pt;
-    background-color: #c8102e;
+    background-color: #000000;
     font-family: Rift;
     font-weight: bold;
     font-size: 14pt;
