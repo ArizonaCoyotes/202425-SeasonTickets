@@ -1,415 +1,170 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Club Red 365</title>
-
+    <title>Arizona Coyotes Mullett Arena</title>
     <script>
         window.iFrameResizer = {
           heightCalculationMethod: 'lowestElement'
         }
     </script>
-	
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Style-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
     <script src="https://use.typekit.net/ote6pql.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <link rel="stylesheet" type="text/css" href="https://washington-capitals.github.io/masterstyle-css.css">
-    <link type="text/css" rel="stylesheet" href="https://washington-capitals.github.io/seatingmap-css.css">
-    <script src="https://washington-capitals.github.io/resizer/iframeResizer.contentWindow.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="https://snagfilms-a.akamaihd.net/90/2b/d53b132643a9b3757640c83c82a8/masterstyle-css.css">
+    <link type="text/css" rel="stylesheet" href="https://snagfilms-a.akamaihd.net/c0/7b/6fd1ed174ac88a1c699522b92456/seatingmap-css.css">
+    <script src="https://s3.amazonaws.com/fed-nhl-microsites/prod/vendor/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
  </head>
-
 <body>
-
 <div class="mainSection">
 	
   <div class="contentArea" id="MapChartHolder">
-
     <div id="MapCanvasWrapper">
-      <img class="detailedImg" id="map_base" src="https://cms.nhl.bamgrid.com/images/photos/295517380/1000x906/cut.png">
-      <img class="detailedImg" id="map_VIP" src="https://cms.nhl.bamgrid.com/images/photos/295517510/1000x906/cut.png">
-      <img class="detailedImg" id="map_CenterCenter" src="https://cms.nhl.bamgrid.com/images/photos/295517484/1000x906/cut.png">
-      <img class="detailedImg" id="map_CenterAttack" src="https://cms.nhl.bamgrid.com/images/photos/295517382/1000x906/cut.png">
-      <img class="detailedImg" id="map_CenterDefend" src="https://cms.nhl.bamgrid.com/images/photos/295517486/1000x906/cut.png">
-      <img class="detailedImg" id="map_LowerAttack" src="https://cms.nhl.bamgrid.com/images/photos/295517494/1000x906/cut.png">
-      <img class="detailedImg" id="map_LowerDefend" src="https://cms.nhl.bamgrid.com/images/photos/295517496/1000x906/cut.png">
-      <img class="detailedImg" id="map_LogeAttack" src="https://cms.nhl.bamgrid.com/images/photos/295517488/1000x906/cut.png">
-      <img class="detailedImg" id="map_LogeDefend" src="https://cms.nhl.bamgrid.com/images/photos/295517490/1000x906/cut.png">
-      <img class="detailedImg" id="map_ClubCenter" src="https://cms.nhl.bamgrid.com/images/photos/295517372/1000x906/cut.png">
-      <img class="detailedImg" id="map_ClubAttack" src="https://cms.nhl.bamgrid.com/images/photos/295517370/1000x906/cut.png">
-      <img class="detailedImg" id="map_ClubDefend" src="https://cms.nhl.bamgrid.com/images/photos/295517376/1000x906/cut.png">
-      <img class="detailedImg" id="map_MezzCenter" src="https://cms.nhl.bamgrid.com/images/photos/295517498/1000x906/cut.png">
-      <img class="detailedImg" id="map_MezzEndAttack" src="https://cms.nhl.bamgrid.com/images/photos/295517504/1000x906/cut.png">
-      <img class="detailedImg" id="map_MezzEndDefend" src="https://cms.nhl.bamgrid.com/images/photos/295517506/1000x906/cut.png">
-      <img class="detailedImg" id="map_MezzCornerAttack" src="https://cms.nhl.bamgrid.com/images/photos/295517500/1000x906/cut.png">
-      <img class="detailedImg" id="map_MezzCornerDefend" src="https://cms.nhl.bamgrid.com/images/photos/295517502/1000x906/cut.png">
-      <img class="detailedImg" id="map_UltraClub" src="https://cms.nhl.bamgrid.com/images/photos/314909184/1000x906/cut.png">
+      <img class="detailedImg" id="map_BASE" src="https://media.d3.nhle.com/image/private/t_document/prd/vivmglbhjvpsjhykxkpc.png>
+      <img class="detailedImg" id="map_GLASS" src="https://media.d3.nhle.com/image/private/t_document/prd/mpykqwranwoghyqpl87u.png">
+      <img class="detailedImg" id="map_CENTERICECLUB" src="https://media.d3.nhle.com/image/private/t_document/prd/unsff4ehdp616v7r69vw.png">
+      <img class="detailedImg" id="map_CENTERICE" src="https://media.d3.nhle.com/image/private/t_document/prd/fctxhhlzytuopvngrdxz.png">
+      <img class="detailedImg" id="map_DENGLASS" src="https://media.d3.nhle.com/image/private/t_document/prd/gtrisxml4leun6isczhr.png">
+      <img class="detailedImg" id="map_ATTACKTWICEPREFERRED" src="https://media.d3.nhle.com/image/private/t_document/prd/sad6tqec3egjetmmdvgw.png">
+      <img class="detailedImg" id="map_ATTACKONCEPREFERRED" src="https://media.d3.nhle.com/image/private/t_document/prd/gxqv5jm68twv4bui9j2o.png">
+      <img class="detailedImg" id="map_ATTACKTWICE" src="https://media.d3.nhle.com/image/private/t_document/prd/rs5ism4o4ulweynzhqn9.png">
+      <img class="detailedImg" id="map_GOALLINEPREFERRED" src="https://media.d3.nhle.com/image/private/t_document/prd/m4t6mlcewlptrrlz8xvt.png">
+      <img class="detailedImg" id="map_ATTACKONCE" src="https://media.d3.nhle.com/image/private/t_document/prd/tx6j5hd2pkamfrr6seuh.png">
+      <img class="detailedImg" id="map_GOAL-LINE" src="https://media.d3.nhle.com/image/private/t_document/prd/kwg21pgb2llc8wlquwpr.png">
+      <img class="detailedImg" id="map_DENPREFERRED" src="https://media.d3.nhle.com/image/private/t_document/prd/txoeort9wangxyltoqil.png">
+      <img class="detailedImg" id="map_DEN" src="https://media.d3.nhle.com/image/private/t_document/prd/qkiwoqmsxn3q2ayo1hu1.png">
+      <img class="detailedImg" id="map_STANDINGROOMONLY" src="https://media.d3.nhle.com/image/private/t_document/prd/rdksmyppihiawcho0plb.png">
     </div>
-
-      <div class="MapSectionInfo">
+<div class="MapSectionInfo">
         <h3>Select A Tier:</h3>
-<button class="accordion"><h2>VIP</h2></button>
+<button class="accordion"><h2>PREMIUM</h2></button>
 <div class="panel">
       <p class="section_color">&nbsp;</p>
       <h1>&nbsp;</h1>
       <p>
-          <span class="_fullSeason">Season Ticket</span>
-          <span class="_halfSeason">Gate Price*</span>
+          <span class="_fullSeason">FULL SEASON</span>
+          <span class="_halfSeason">PER GAME</span>
         </p>
-        <div id="VIP" class="section">
-          <p class="section_color" style="background-color: #fece02;color:#000000;">&nbsp;</p>
-          <h1>VIP A</h1>
+        <div id="GLASS" class="section">
+          <p class="section_color" style="background-color: #f4dd0c;color:#000000;">&nbsp;</p>
+          <h1>GLASS*</h1>
             <p>
-              <span class="_fullSeason">$617</span>
-              <span class="_halfSeason">$686</span>
+              <span class="_fullSeason">$16,605</span>
+              <span class="_halfSeason">$405</span>
             </p>         
         </div>
-        <div id="VIP" class="section">
-          <p class="section_color" style="background-color: #fece02;">&nbsp;</p>
-          <h1>VIP B</h1>
+        <div id="CENTERICECLUB" class="section">
+          <p class="section_color" style="background-color: #168710;">&nbsp;</p>
+          <h1>CENTER ICE CLUB**</h1>
             <p>
-              <span class="_fullSeason">$390</span>
-              <span class="_halfSeason">$435</span>
+              <span class="_fullSeason">$11,070</span>
+              <span class="_halfSeason">$270</span>
             </p>         
         </div>
-        <div id="VIP" class="section">
-          <p class="section_color" style="background-color: #fece02;">&nbsp;</p>
-          <h1>VIP C</h1>
+        <div id="CENTERICE" class="section">
+          <p class="section_color" style="background-color: #dd6512;">&nbsp;</p>
+          <h1>CENTER ICE</h1>
             <p>
-              <span class="_fullSeason">$334</span>
-              <span class="_halfSeason">$374</span>
-            </p>         
+              <span class="_fullSeason">$8,405</span>
+              <span class="_halfSeason">$205</span>
+            </p>
         </div>
-        <div id="UltraClub" class="section">
-          <p class="section_color" style="background-color: #ffffff;">&nbsp;</p>
-          <h1>Ultra Club - Rows 1 - 4</h1>
+        <div id="DENGLASS" class="section">
+          <p class="section_color" style="background-color: #74d12c;">&nbsp;</p>
+          <h1>DEN GLASS**</h1>
             <p>
-              <span class="_fullSeason">$281</span>
-              <span class="_halfSeason">$315</span>
-            </p>         
-        </div>
-        <div id="UltraClub" class="section">
-            <p class="section_color" style="background-color: #ffffff;">&nbsp;</p>
-          <h1>Ultra Club - Row 5</h1>
-            <p>
-              <span class="_fullSeason">$237</span>
-              <span class="_halfSeason">$315</span>
-            </p>         
+              <span class="_fullSeason">$8,200</span>
+              <span class="_halfSeason">$200</span>
+            </p>                   
         </div>
       </div>
-
-      <button class="accordion"><h2>100 Level</h2></button>
+      <button class="accordion"><h2>BLUE LINE</h2></button>
       <div class="panel">
           <p class="section_color">&nbsp;</p>
           <h1>&nbsp;</h1>
           <p>
-              <span class="_fullSeason">Season Ticket</span>
-              <span class="_halfSeason">Gate Price*</span>
+              <span class="_fullSeason">FULL SEASON</span>
+              <span class="_halfSeason">PER GAME</span>
             </p>
-        <div id="CenterCenter" class="section">
-          <p class="section_color" style="background-color: #9d3594;">&nbsp;</p>
-          <h1>Center Preferred : Center (D-T)</h1>
+        <div id="ATTACKTWICEPREFERRED" class="section">
+          <p class="section_color" style="background-color: #ce2980;">&nbsp;</p>
+          <h1>ATTACK TWICE PREFERRED</h1>
             <p>
-              <span class="_fullSeason">$195</span>
-              <span class="_halfSeason">$224</span>
+              <span class="_fullSeason">$7,175</span>
+              <span class="_halfSeason">$175</span>
             </p>         
         </div>
-
-        <div id="CenterAttack" class="section">
-            <p class="section_color" style="background-color: #921c4c;">&nbsp;</p>
-          <h1>Center Preferred : Attack (D-T)</h1>
+        <div id="ATTACKONCEPREFERRED" class="section">
+            <p class="section_color" style="background-color: #0636ce;">&nbsp;</p>
+          <h1>ATTACK ONCE PREFERRED</h1>
             <p>
-              <span class="_fullSeason">$173</span>
-              <span class="_halfSeason">$193</span>
+              <span class="_fullSeason">$6,765</span>
+              <span class="_halfSeason">$165</span>
             </p>         
         </div>
-
-        <div id="CenterDefend" class="section">
-            <p class="section_color" style="background-color: #58217c;">&nbsp;</p>
-          <h1>Center Preferred : Defend (D-T)</h1>
+        <div id="ATTACKTWICE" class="section">
+            <p class="section_color" style="background-color: #f460b5;">&nbsp;</p>
+          <h1>ATTACK TWICE</h1>
             <p>
-              <span class="_fullSeason">$159</span>
-              <span class="_halfSeason">$177</span>
-            </p>         
-        </div>
-
-        <div id="LowerAttack" class="section">
-            <p class="section_color" style="background-color: #e41936;">&nbsp;</p>
-          <h1>Lower Preferred : Attack (D-K)</h1>
-            <p>
-              <span class="_fullSeason">$152</span>
-              <span class="_halfSeason">$169</span>
-            </p>         
-        </div>
-
-        <div id="LowerAttack" class="section">
-            <p class="section_color" style="background-color: #c6142e;">&nbsp;</p>
-          <h1>Lower Preferred : Attack (L-U)</h1>
-            <p>
-              <span class="_fullSeason">$142</span>
-              <span class="_halfSeason">$158</span>
-            </p>         
-        </div>
-
-
-        <div id="LowerDefend" class="section">
-            <p class="section_color" style="background-color: #003b75;">&nbsp;</p>
-          <h1>Lower Preferred : Defend (D-K)</h1>
-            <p>
-              <span class="_fullSeason">$140</span>
-              <span class="_halfSeason">$155</span>
-            </p>         
-        </div>
-
-        <div id="LowerDefend" class="section">
-            <p class="section_color" style="background-color: #011d4c;">&nbsp;</p>
-          <h1>Lower Preferred : Defend (L-U)</h1>
-            <p>
-              <span class="_fullSeason">$126</span>
-              <span class="_halfSeason">$144</span>
-            </p>         
-        </div>
-
-        <div id="LogeAttack" class="section">
-            <p class="section_color" style="background-color: #f19031;">&nbsp;</p>
-          <h1>Loge Preferred : Attack</h1>
-            <p>
-              <span class="_fullSeason">$123</span>
-              <span class="_halfSeason">$141</span>
-            </p>         
-        </div>
-
-
-        <div id="LogeDefend" class="section">
-            <p class="section_color" style="background-color: #017dc5;">&nbsp;</p>
-          <h1>Loge Preferred : Defend</h1>
-            <p>
-              <span class="_fullSeason">$117</span>
-              <span class="_halfSeason">$134</span>
+              <span class="_fullSeason">$5,945</span>
+              <span class="_halfSeason">$145</span>
             </p>         
         </div>
         </div>
-
-
-        <button class="accordion"><h2>200 Level</h2></button>
+        <button class="accordion"><h2>GOAL LINE</h2></button>
         <div class="panel">
             <p class="section_color">&nbsp;</p>
             <h1>&nbsp;</h1>
             <p>
-                <span class="_fullSeason">Season Ticket</span>
-                <span class="_halfSeason">Gate Price*</span>
+                <span class="_fullSeason">FULL SEASON</span>
+                <span class="_halfSeason">PER GAME</span>
               </p>
-        <div id="ClubCenter" class="section">
-            <p class="section_color" style="background-color: #729285;">&nbsp;</p>
-          <h1>200 Level: Center - Front (A-F)</h1>
+        <div id="GOALLINEPREFERRED" class="section">
+            <p class="section_color" style="background-color: #3f0d60;">&nbsp;</p>
+          <h1>GOAL LINE PREFERRED</h1>
             <p>
-              <span class="_fullSeason">$179</span>
-              <span class="_halfSeason">$198</span>
+              <span class="_fullSeason">$5,740</span>
+              <span class="_halfSeason">$140</span>
             </p>         
         </div>
-        <div id="ClubCenter" class="section">
-            <p class="section_color" style="background-color: #546e65;">&nbsp;</p>
-          <h1>200 Level: Center - Back (G-L)</h1>
+        <div id="ATTACKONCE" class="section">
+            <p class="section_color" style="background-color: #699ae2;">&nbsp;</p>
+          <h1>ATTACK ONCE</h1>
             <p>
-              <span class="_fullSeason">$168</span>
-              <span class="_halfSeason">$198</span>
+              <span class="_fullSeason">$5,535</span>
+              <span class="_halfSeason">$135</span>
             </p>         
         </div>
-        <div id="ClubAttack" class="section">
-            <p class="section_color" style="background-color: #bb945d;">&nbsp;</p>
-          <h1>200 Level: Attack - Front (A-F)</h1>
+        <div id="GOAL-LINE" class="section">
+            <p class="section_color" style="background-color: #8036ce;">&nbsp;</p>
+          <h1>GOAL LINE</h1>
             <p>
-              <span class="_fullSeason">$151</span>
-              <span class="_halfSeason">$167</span>
+              <span class="_fullSeason">$4,715</span>
+              <span class="_halfSeason">$115</span>
             </p>         
         </div>
-        <div id="ClubAttack" class="section">
-            <p class="section_color" style="background-color: #8a6f42;">&nbsp;</p>
-          <h1>200 Level: Attack - Back (G-L)</h1>
+        <div id="DENPREFERRED" class="section">
+            <p class="section_color" style="background-color: #820b0b;">&nbsp;</p>
+          <h1>DEN PREFERRED</h1>
             <p>
-              <span class="_fullSeason">$143</span>
-              <span class="_halfSeason">$167</span>
+              <span class="_fullSeason">$4,305</span>
+              <span class="_halfSeason">$105</span>
             </p>         
         </div>
-        <div id="ClubDefend" class="section">
-            <p class="section_color" style="background-color: #568694;">&nbsp;</p>
-          <h1>200 Level: Defend - Front (A-F)</h1>
+        <div id="DEN" class="section">
+            <p class="section_color" style="background-color: #ba120d;">&nbsp;</p>
+          <h1>DEN</h1>
             <p>
-              <span class="_fullSeason">$143</span>
-              <span class="_halfSeason">$160</span>
+              <span class="_fullSeason">$3,895</span>
+              <span class="_halfSeason">$95</span>
             </p>         
         </div>
-        <div id="ClubDefend" class="section">
-            <p class="section_color" style="background-color: #3e646f;">&nbsp;</p>
-          <h1>200 Level: Defend - Back (G-L)</h1>
+        <div id="STANDINGROOMONLY" class="section">
+            <p class="section_color" style="background-color: #00c1ae;">&nbsp;</p>
+          <h1>STANDING ROOM ONLY***</h1>
             <p>
-              <span class="_fullSeason">$133</span>
-              <span class="_halfSeason">$160</span>
+              <span class="_fullSeason">$3,075</span>
+              <span class="_halfSeason">$75</span>
             </p>         
-        </div>
-        </div>
-        <button class="accordion"><h2>400 Level</h2></button>
-        <div class="panel">
-            <p class="section_color">&nbsp;</p>
-            <h1>&nbsp;</h1>
-            <p>
-                <span class="_fullSeason">Season Ticket</span>
-                <span class="_halfSeason">Gate Price*</span>
-              </p>
-        <div id="MezzCenter" class="section">
-            <p class="section_color" style="background-color: #8cc63e;">&nbsp;</p>
-          <h1>Mezzanine Center - Front (A-H)</h1>
-            <p>
-              <span class="_fullSeason">$82</span>
-              <span class="_halfSeason">$92</span>
-            </p>         
-        </div>
-        <div id="MezzCenter" class="section">
-            <p class="section_color" style="background-color: #75a734;">&nbsp;</p>
-          <h1>Mezzanine Center - Mid (J-M)</h1>
-            <p>
-              <span class="_fullSeason">$76</span>
-              <span class="_halfSeason">$86</span>
-            </p>         
-        </div>
-        <div id="MezzCenter" class="section">
-            <p class="section_color" style="background-color: #5c8829;">&nbsp;</p>
-          <h1>Mezzanine Center - Back (N-Q)</h1>
-            <p>
-              <span class="_fullSeason">$71</span>
-              <span class="_halfSeason">$80</span>
-            </p>         
-        </div>
-
-        <div id="MezzEndAttack" class="section">
-            <p class="section_color" style="background-color: #faf02f;">&nbsp;</p>
-          <h1>Mezzanine End: Attack - Front (A-H)</h1>
-            <p>
-              <span class="_fullSeason">$63</span>
-              <span class="_halfSeason">$72</span>
-            </p>         
-        </div>
-        <div id="MezzEndAttack" class="section">
-            <p class="section_color" style="background-color: #d8cc26;">&nbsp;</p>
-          <h1>Mezzanine End: Attack - Mid (J-M)</h1>
-            <p>
-              <span class="_fullSeason">$59</span>
-              <span class="_halfSeason">$67</span>
-            </p>         
-        </div>
-        <div id="MezzEndAttack" class="section">
-            <p class="section_color" style="background-color: #b3a91e;">&nbsp;</p>
-          <h1>Mezzanine End: Attack - Back (N-Q)</h1>
-            <p>
-              <span class="_fullSeason">$51</span>
-              <span class="_halfSeason">$58</span>
-            </p>         
-        </div>
-
-        <div id="MezzEndDefend" class="section">
-            <p class="section_color" style="background-color: #7ebfe9;">&nbsp;</p>
-          <h1>Mezzanine End: Defend - Front (A-H)</h1>
-            <p>
-              <span class="_fullSeason">$60</span>
-              <span class="_halfSeason">$67</span>
-            </p>         
-        </div>
-        <div id="MezzEndDefend" class="section">
-            <p class="section_color" style="background-color: #6da3c7;">&nbsp;</p>
-          <h1>Mezzanine End: Defend - Mid (J-M)</h1>
-            <p>
-              <span class="_fullSeason">$57</span>
-              <span class="_halfSeason">$65</span>
-            </p>         
-        </div>
-        <div id="MezzEndDefend" class="section">
-            <p class="section_color" style="background-color: #5a89a7;">&nbsp;</p>
-          <h1>Mezzanine End: Defend - Back (N-Q)</h1>
-            <p>
-              <span class="_fullSeason">$49</span>
-              <span class="_halfSeason">$55</span>
-            </p>         
-        </div>
-
-        <div id="MezzCornerAttack" class="section">
-            <p class="section_color" style="background-color: #c7cf21;">&nbsp;</p>
-          <h1>Mezzanine Corner: Attack - Front (A-H)</h1>
-            <p>
-              <span class="_fullSeason">$63</span>
-              <span class="_halfSeason">$71</span>
-            </p>         
-        </div>
-        <div id="MezzCornerAttack" class="section">
-            <p class="section_color" style="background-color: #a7af1b;">&nbsp;</p>
-          <h1>Mezzanine Corner: Attack - Mid (J-M)</h1>
-            <p>
-              <span class="_fullSeason">$57</span>
-              <span class="_halfSeason">$63</span>
-            </p>         
-        </div>
-        <div id="MezzCornerAttack" class="section">
-            <p class="section_color" style="background-color: #858f12;">&nbsp;</p>
-          <h1>Mezzanine Corner: Attack - Back (N-Q)</h1>
-            <p>
-              <span class="_fullSeason">$50</span>
-              <span class="_halfSeason">$56</span>
-            </p>         
-        </div>
-
-        <div id="MezzCornerDefend" class="section">
-            <p class="section_color" style="background-color: #78c1ae;">&nbsp;</p>
-          <h1>Mezzanine Corner: Defend - Front (A-H)</h1>
-            <p>
-              <span class="_fullSeason">$59</span>
-              <span class="_halfSeason">$65</span>
-            </p>         
-        </div>
-        <div id="MezzCornerDefend" class="section">
-            <p class="section_color" style="background-color: #619f90;">&nbsp;</p>
-          <h1>Mezzanine Corner: Defend - Mid (J-M)</h1>
-            <p>
-              <span class="_fullSeason">$52</span>
-              <span class="_halfSeason">$59</span>
-            </p>         
-        </div>
-        <div id="MezzCornerDefend" class="section">
-            <p class="section_color" style="background-color: #497f72;">&nbsp;</p>
-          <h1>Mezzanine Corner: Defend - Back (N-Q)</h1>
-            <p>
-              <span class="_fullSeason">$47</span>
-              <span class="_halfSeason">$53</span>
-            </p>         
-        </div>
-        
-      </div>
-
-      <center><p><i><span style="color:#FFFFFF;">*Based on average 2022-23 on-sale price.  Prices subject to change.</span></i></p></center>
-  </div>
-  </div>
-  </div>
-
-
-  <script src="https://washington-capitals.github.io/seatingmap.js"></script>
-
-  <script>
-
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-      
-      for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              var panel = this.nextElementSibling;
-              if (panel.style.display === "block") {
-                  panel.style.display = "none";
-              } else {
-                  panel.style.display = "block";
-              }
-          });
-      }
-      </script>
-
-
-</body>
-</html>
+        </div>        </div>  
