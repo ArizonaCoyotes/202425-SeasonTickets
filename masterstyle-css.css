@@ -74,7 +74,7 @@ html,body{width: 100%; padding: 0px; margin: 0px;}
 	float: left;
 	font-size: 14pt;
 	margin: 5px 0px 5px 0px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', serif;
 	color: #191919;
 	padding: 5px 10px 5px 10px;
 }
@@ -105,14 +105,14 @@ html,body{width: 100%; padding: 0px; margin: 0px;}
 
 .copyArea p a{
 	text-decoration: none;
-	color: #CE1126;
+	color: #ECDFC4;
 	position: relative;
 }
 .copyArea p a:after{
 	content: '';
 	position: absolute;
 	bottom: 0;
-	border-bottom:3px solid #CE1126; 
+	border-bottom:3px solid #ECDFC4; 
 	width: 0%;
 	left: 0;
 	transition: 0.2s all ease;
@@ -125,7 +125,7 @@ html,body{width: 100%; padding: 0px; margin: 0px;}
 .copyArea h1{
 	width: 100%;
 	float: left;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', serif;
 	font-size: 28pt;
 	text-transform: none;
 	letter-spacing: 5px;
@@ -136,7 +136,7 @@ html,body{width: 100%; padding: 0px; margin: 0px;}
 
 .copyArea h1 span{
 	float: left;
-	background-color: #CE1126;
+	background-color: #ECDFC4;
 	padding: 10px;
 	margin-right: 5px;
 }
@@ -144,7 +144,7 @@ html,body{width: 100%; padding: 0px; margin: 0px;}
 .copyArea h2{
 	width: 100%;
 	float: left;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', serif;
 	font-size: 21pt;
 	font-weight: 400;
 	text-align: left;
@@ -165,7 +165,7 @@ html,body{width: 100%; padding: 0px; margin: 0px;}
 	float: left;
 	font-size: 14pt;
 	margin: 5px 0px 5px 0px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', serif;
 	color: #191919;
 	padding: 5px 10px 5px 10px;
 }
@@ -221,7 +221,7 @@ html,body{width: 100%; padding: 0px; margin: 0px;}
 	margin: 20px 10px 0px 10px;
 	border: 2px solid #1a1a1a;
 	text-align: center;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', serif;
 	font-weight: 600;
 	color: #1a1a1a;
 	transition: 0.4s all ease, 0.2s background-position ease, 0.2s color ease !important ;
@@ -382,13 +382,13 @@ video{
 .stickyBox{
 	width: 150px;
 	height: 100px;
-	background-color: #CE1126;
+	background-color: #ECDFC4;
 	position: fixed;
 	border-radius: 30px;
 	right: 15px;
 	float: left;
 	top:40%; 
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', serif;
 	color: #191919;
 	z-index: 1000000;
 	transition: all 0.2s ease;
@@ -413,7 +413,7 @@ box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);*/
   right: -4px;
   bottom: -30px;
   border: 25px solid;
-  border-color: #CE1126 transparent transparent #CE1126;
+  border-color: #ECDFC4 transparent transparent #ECDFC4;
   transform: rotate(80deg);
   -webkit-transform: rotate(80deg);
   
