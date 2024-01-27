@@ -1,5 +1,5 @@
 body {
-  background-color:transparent;
+  background-color:000000;
 }
 #MapChartHolder{  
     margin-top: 20px;
@@ -23,7 +23,7 @@ body {
   }
   
   .panel {
-    background-color: transparent;
+    background-color: 000000;
     display: none;
     overflow: hidden;
 }
