@@ -138,7 +138,7 @@ html,body{width: 100%; padding: 0px; margin: 0px;}
 	float: left;
 	background-color: #ECDFC4;
 	padding: 10px;
-	margin-right: 5px;
+	margin-right: 10px;
 }
 
 .copyArea h2{
@@ -148,7 +148,7 @@ html,body{width: 100%; padding: 0px; margin: 0px;}
 	font-size: 21pt;
 	font-weight: 400;
 	text-align: left;
-	margin: 5px 0px 5px 0px;
+	margin: 5px 10px 5px 10px;
 	padding: 5px 10px 5px 10px;
 	color: #1a1a1a;
 }
@@ -164,7 +164,7 @@ html,body{width: 100%; padding: 0px; margin: 0px;}
 	width: 100%;
 	float: left;
 	font-size: 14pt;
-	margin: 5px 0px 5px 0px;
+	margin: 5px 10px 5px 10px;
 	font-family: 'Helvetica', serif;
 	color: #191919;
 	padding: 5px 10px 5px 10px;
@@ -216,7 +216,7 @@ html,body{width: 100%; padding: 0px; margin: 0px;}
 }
 .boxLink{
 	width: 250px;
-	padding: 10px 0px 10px 0px;
+	padding: 10px 10px 10px 10px;
 	float: left;
 	margin: 20px 10px 0px 10px;
 	border: 2px solid #1a1a1a;
